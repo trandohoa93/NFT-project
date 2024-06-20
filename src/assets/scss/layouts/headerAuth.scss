@@ -1,0 +1,117 @@
+.header-wrapper {
+    display: flex;
+    padding: 14px 252px;
+    gap: 28px;
+    justify-content: space-between;
+    background-color: var(--color-background);
+    position: relative;
+    z-index: 1;
+
+    .header-left-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 32px;
+    }
+
+    .header-right-wrapper {
+      flex: 0 1 496px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+
+      .header-btn-wrapper {
+            max-width: 192px;
+            height: 44px;
+            padding: 11px 21px;
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            border-radius: 90px;
+            position: relative;
+            background-color: #F83600;
+            background-image: linear-gradient(135deg, #FE8C00 0%, #F83600 100%);
+        
+            .header-btn-content {
+                color: var(--color-white-1);
+                font-family: var(--font-secondary);
+                font-size: var(--font-sm-2);
+                font-weight: 700;
+                line-height: 20px;
+            }
+            
+            .header-btn-icon {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+}
+
+
+
+
+
+  //------------------------------Tablet--------------------------------//
+
+.header-tablet-wrapper {
+    padding: 14px 50px;
+    display: none;
+    background-color: var(--color-background);
+
+    .header-top-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .header-bottom-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    .header-bottom-action {
+        display: flex;
+    }
+}
+
+:global(.v-btn__content) {
+    font-family: var(--font-secondary);
+    font-size: var(--font-sm-2);
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+@media screen and (max-width: 1830px) {
+    .header-wrapper {
+        padding: 14px 152px;
+      }
+  }
+
+  @media screen and (max-width: 1300px) {
+    .header-wrapper {
+        padding: 14px 112px;
+      }
+  }
+
+
+  @media screen and (max-width: 961px) {
+    .header-wrapper {
+      display: none;
+    }
+
+    .header-tablet-wrapper {
+      display: block;
+      padding: 14px 62px;
+    }
+  }
+
+  @media screen and (max-width: 570px) {
+    .header-tablet-wrapper {
+      padding: 14px 20px;
+    }
+  }

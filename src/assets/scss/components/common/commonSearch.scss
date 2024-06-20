@@ -1,0 +1,22 @@
+.search {
+    font-size: var(--font-sm-4);
+    font-weight: 500;
+    line-height: 17.5px;
+}
+
+:global(.v-field__input),
+:global(.v-field__field)
+{   
+    height: 50px;
+}
+
+:global(.v-field__input) {
+    min-height: unset !important;
+}
+
+
+:global(.v-field--variant-outlined .v-field__outline) {
+    --v-field-border-width: 2px;
+    --v-field-border-opacity: 1;
+    color: var(--color-background-chain);
+}

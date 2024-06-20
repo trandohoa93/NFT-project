@@ -1,0 +1,7 @@
+    .common-background-circular {
+        position: absolute;
+        z-index: 1;
+        background-image: radial-gradient(circle closest-side, #ff892f, var(--color-background));
+        pointer-events: none;
+        filter: blur(200px);
+    }

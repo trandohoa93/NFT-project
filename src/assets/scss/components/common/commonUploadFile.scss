@@ -1,0 +1,46 @@
+.common-upload-file-wrapper {
+    .upload-title {
+        font-size: var(--font-sm-2);
+        font-weight: 700;
+        line-height: 20px;
+        text-align: left;
+        color: var(--color-text);
+        margin-bottom: 16px;
+
+        .upload-required {
+            color: var(--color-red-1);
+        }
+    }
+
+    .upload-image-wrapper {
+        border: 2px dashed var(--color-gray-7);
+        background-color: var(--color-background);
+        position: relative;
+        padding: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    
+        .upload-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(162.52deg, #36FDDE -33.13%, #F4FDD0 39.28%, #F7EFC2 68.59%, #FFCEA1 104.14%);
+    
+            .upload-icon {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                color: var(--color-background);
+                font-size: var(--font-xl-2);
+            }
+        }
+    }
+
+    .upload-error-message {
+        color: var(--color-red-1);
+        
+    }
+}

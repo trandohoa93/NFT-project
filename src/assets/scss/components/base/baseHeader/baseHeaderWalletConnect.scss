@@ -1,0 +1,105 @@
+.header-wallet-wrapper {
+    position: relative;
+
+    .wallet-btn {
+        max-width: 192px;
+        height: 44px;
+        padding: 11px 21px;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        border-radius: 90px;
+        position: relative;
+        background-color: #F83600;
+        background-image: linear-gradient(135deg, #FE8C00 0%, #F83600 100%);
+    
+        &:hover {
+            background-image: none;
+            color: var(--color-highlight);
+            opacity: 80%;
+        }
+        
+        .wallet-content {
+            color: var(--color-primary-light);
+            font-family: var(--font-secondary);
+            font-size: var(--font-sm-2);
+            font-weight: 700;
+            line-height: 20px;
+            white-space: nowrap;
+        }
+
+        .wallet-icon {
+            width: 24px;
+            height: 24px;
+        }
+    }
+    
+}
+
+.wallet-drawer-wrapper {
+    position: absolute;
+    max-width: 560px;
+    background-color: var(--color-primary-light);
+    z-index: 999999;
+    padding: 40px 50px;
+    right: 0;
+    top: 100px;
+}
+
+.wallet-drawer-title {
+    font-size: var(--font-xl);
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 16px;
+}
+
+.wallet-drawer-content {
+    font-size: var(--font-md-2);
+    font-weight: 500;
+    line-height: 32px;
+    margin-bottom: 44px;
+}
+
+.wallet-name-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.wallet-name {
+    border: 1px solid var(--color-border-secondary);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--color-primary-light);
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.25);
+
+    &:hover {
+      background-image: var(--color-background-primary);
+
+      & * {
+        color: var(--color-primary-light);
+      }
+    }
+}
+
+.wallet-image {
+    width: 40px;
+    height: 40px;
+}
+
+.header-wallet-desc {
+    @include pageSmallStyle;
+    font-weight: 700;
+}
+
+.drawer-enter-active,
+.drawer-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.drawer-enter-from,
+.drawer-leave-to {
+  opacity: 0;
+}

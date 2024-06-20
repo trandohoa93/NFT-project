@@ -1,0 +1,55 @@
+    .market-place {
+    background-color: var(--color-background);
+
+    .loading { 
+        width: 100%;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tabs-container {
+        margin: 60px auto 0 auto;
+        max-width: 1416px;
+        color: var(--color-gray-8);
+    }
+    
+    .tab-value {
+        margin-right: 24px;
+    }
+
+    .text {
+        font-size: 40px;
+    }
+
+    .text-selectecd {
+        color: var(--color-text--title-marketplace);
+    }
+
+    .card-text {
+        padding: 0;
+        margin: 40px auto 0 auto;
+        max-width: 1416px;
+    }
+
+    .container-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .wrapper {
+        height: 50px;
+        width: 724px;
+        display: flex;
+        gap: 8px;
+    }
+    
+}
+
+
+:global(.v-btn__overlay) {
+    display: none;
+}

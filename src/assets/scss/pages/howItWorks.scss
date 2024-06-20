@@ -1,0 +1,44 @@
+.how-it-works-wrapper {
+    .how-it-works-header {
+        margin-top: 110px;
+
+        .works-title {
+            font-size: 90px;
+            font-weight: 700;
+            line-height: 112.5px;
+            text-align: left;
+            color: var(--color-text);
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            margin-bottom: 24px;
+
+            span {
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 30px;
+                text-align: left;
+            }
+        }
+    }
+
+    .how-it-works-body {
+        .body-title {
+            margin-top: 170px;
+            font-size: var(--font-md-2);
+            font-weight: 700;
+            line-height: 25px;
+            text-align: center;
+            color: var(--color-text);
+        }
+
+        .list-investors {
+            display: flex;
+            margin-top: 40px;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+            flex-wrap: wrap;
+        }
+    }
+}

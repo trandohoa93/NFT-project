@@ -1,0 +1,58 @@
+.account-notifications-wrapper {
+    .notifications-title {
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 80px;
+        text-align: center;
+        color: var(--color-text);
+        margin-bottom: 30px;
+    }
+
+    .notifications-filters {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .filter-button {
+            width: 124px;
+            height: 44px;
+            border-radius: 27px;
+            color: var(--color-text);
+            font-size: var(--font-md-2);
+            font-weight: 700;
+            line-height: 25px;
+            text-align: center;
+        }
+    }
+
+    .notifications-display {
+        
+        .display-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .read-all {
+                font-size: var(--font-md-2);
+                font-weight: 600;
+                line-height: 25px;
+                text-align: left;
+                color: var(--color-orange-5);
+                text-decoration: underline;
+                text-transform: uppercase;
+                white-space: nowrap;
+                cursor: pointer;
+
+                &:hover {
+                    color: var(--color-orange-1);
+                }
+            }
+        }
+    }
+
+    .active {
+        background: var(--color-mix-2);
+        opacity: 0.3px;
+
+    }
+}

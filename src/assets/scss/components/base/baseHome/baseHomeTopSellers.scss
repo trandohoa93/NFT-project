@@ -1,0 +1,195 @@
+.top-marketlace {
+    background-color: var(--color-background);
+    display: flex;
+
+    .top-sellers {
+        height: 698px;
+        .header-top-sellers {
+            font-size: 40px;
+            font-weight: bold;
+            font-family: var(--font-secondary) !important;
+        }
+
+        .body-top-sellers {
+            .list-top-sellers {
+                display: flex;
+                align-items: center;
+                min-width: 280px;
+
+                .number-best-sellers {
+                    width: 40px;
+                    font-size: 40px;
+                    font-weight: bold;
+                    background: linear-gradient(180deg, #1E1D1D 12.63%, #FFFFFF 87.65%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;   
+                }
+
+                .avatar-user {
+                    display: flex;
+                    position: relative;
+                    img {
+                        width: 60px;
+                        height: 60px;
+                        object-fit: contain;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
+                    }
+
+                    .custom-check {
+                        height: 24px;
+                        width: 24px;
+                        position: absolute;
+                        right: 12px;
+                        bottom: 0;
+                    }
+                }
+
+                .info-user {
+                    .name-user {
+                        font-size: var(--font-sm-2);
+                        font-weight: bold;
+                    }
+                    .price-eth {
+                        display: flex;
+                        align-items: center;
+                        img {
+                            width: 16px;
+                            height: 16px;
+                        }
+                        .number-price {
+                            font-size: 14px;
+                            font-weight: bold;
+                            color: #999999;
+                        }
+                        
+                    }
+                }
+            }
+        }
+        
+    }
+
+    .market-place {
+        .header-market-place {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .title-market-place {
+                font-size: 40px;
+                font-weight: bold;
+                font-family: var(--font-secondary) !important;
+            }
+            .list-category-market {
+                display: flex;
+                align-items: flex-start;
+                border: 1px var(--color-tab-filter) solid;
+                padding: 0;
+                justify-content: space-between;
+                cursor: pointer;
+
+                .item-category-market {
+                    font-size: 16px;
+                    font-weight: bold;
+                    span {
+                        color: var(--color-border-primary);
+                    }
+                   
+                }
+
+                .active {
+                    background-color: var(--color-background-chain);
+                    span {
+                        color: var(--color-text);
+                    }                    
+                }
+            }
+        }
+        .best-list-product {
+            display: flex;
+            justify-content: space-between;
+
+            .second-product {
+                .list-second {
+                    display: flex;
+                    justify-content: center;
+
+                    .item-list {
+                        flex-grow: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1600px) {
+   .right {
+    display: none;
+   }
+}
+
+@media screen and (max-width: 1420px) {
+    .top-marketlace {
+        flex-wrap: nowrap;
+        gap: 70px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .top-marketlace {
+        flex-wrap: wrap;
+        background-color: var(--color-background);
+
+        .top-sellers {
+            height: auto;
+            overflow-x: auto;
+            .body-top-sellers {
+                display: flex;
+            }
+        }
+    }
+    .right {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .top-marketlace {
+        .top-sellers {
+            height: auto;
+            .body-top-sellers {
+                display: flex;
+                overflow-x: auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .top-marketlace {
+        padding: 0 16px;
+        .top-sellers {
+            height: auto;
+            .body-top-sellers {
+                display: flex;
+                overflow-x: auto;
+            }
+        }
+    }
+
+    .market-place {
+        .header-market-place {
+            flex-direction: column;
+            .list-category-market {
+                flex-wrap: wrap;
+            }
+        }
+    }
+}
+
+.color-text {
+    color: var(--color-text);
+}

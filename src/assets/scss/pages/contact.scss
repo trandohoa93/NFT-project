@@ -1,0 +1,72 @@
+.contact-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 560px;
+    padding-bottom: 120px;
+    position: relative;
+    z-index: 2;
+    
+    .contact-title {
+        font-size: var(--font-xl);
+        font-weight: 700;
+        line-height: 50px;
+        text-align: center;
+        color: var(--color-text);
+        text-transform: uppercase;
+        margin-bottom: 12px;
+    }
+
+    .contact-desc {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        text-align: center;
+        color: var(--color-text-4);
+        margin-bottom: 40px;
+    }
+
+    .contact-details {
+        padding: 38px 60px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 60px;
+        white-space: nowrap;
+        justify-content: center;
+        margin-bottom: 38px;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        
+        .contact-button {
+            margin-top: 32px;
+        }
+    }
+        
+}
+
+@media screen and (max-width: 1620px) {
+    .contact-page-wrapper {
+        padding-top: 300px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .contact-page-wrapper {
+        padding-top: 150px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-page-wrapper {
+        padding-top: 100px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-page-wrapper {
+        padding-top: 50px;
+    }
+}

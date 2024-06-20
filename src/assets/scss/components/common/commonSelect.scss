@@ -1,0 +1,53 @@
+.common-select {
+    width: 100%;
+    margin-bottom: 8px;
+
+    .select-title {
+        font-size: var(--font-sm-2);
+        font-weight: 700;
+        line-height: 18px;
+        text-align: left;
+        margin-bottom: 10px;
+        color: var(--color-text);
+    }
+
+
+    :deep(.select-input) {
+        .v-field--variant-outlined .v-field__outline {
+            --v-field-border-width: 0px;
+            --v-field-border-opacity: 1;
+        }
+
+        .v-field__input,
+        .v-field__field {
+            height: 50px;
+        }
+
+        .v-field__input {
+            min-height: unset !important;
+            color: var(--color-text-3);
+        }
+    }
+}
+
+.menu {
+    border-radius: 0px !important;
+
+    .v-list {
+        padding: 0;
+    }
+
+    .v-list-item-title {
+        color: var(--color-text-3);
+    }
+}
+
+.select-error {
+    margin-top: 8px;
+    color: var(--color-red-1);
+    position: absolute;
+}
+
+.required {
+    color: var(--color-red-1);
+}

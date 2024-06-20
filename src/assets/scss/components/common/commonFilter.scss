@@ -1,0 +1,129 @@
+  .header-filter {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  height: 50px;
+  background-color: var(--color-background-filter);
+  border-radius: 30px;
+  font-family: var(--font-secondary) !important;
+  padding: 14px 0 16px 14px;
+  border: 2px solid var(--color-button-filter);
+}
+
+.arrow-left {
+  cursor: pointer;
+}
+
+.body-filter {
+  width: 300px;
+
+  .status-filter {
+    border-bottom: 1px solid var(--color-border-1);
+
+    .header-status-filter {
+      .v-row {
+        padding: 24px 16px;
+      }
+      .v-col {
+        padding: 0;
+      }
+      font-size: 16px;
+    }
+
+    .body-status-filter {
+      .item-status-filter {
+        .v-row {
+          padding: 0px 16px 16px 16px;
+        }
+        .v-col {
+          padding: 0;
+        }
+        
+        .v-selection-control {
+          left: 10px;
+        }
+      }
+    }
+  }
+
+  .price-status {
+    border-bottom: 1px solid var(--color-border-1);
+
+    .header-price-filter {
+      display: flex;
+      justify-content: space-between;
+      padding: 24px 0;
+      font-size: 16px;
+    }
+
+    .body-price-filter {
+      display: flex;
+
+      .type-price {
+        width: 95px;
+
+        .select-price {
+          color: var(--color-text)
+        }
+      }
+
+      .v-input__details {
+        display: none !important;
+      }
+
+      .render-price {
+        display: flex;
+        align-items: center;
+
+        .min-price {
+          width: 85px;
+
+          .min {
+            color: var(--color-text)
+          }
+        }
+
+        .max-price {
+          width: 85px;
+
+          .max {
+            color: var(--color-text);
+          }
+        }
+
+        .custom-text {
+          
+          font-weight: 600;
+        }
+      }
+    }
+
+    .button-apply {
+      padding-top: 16px;
+      padding-bottom: 25px;
+      width: 100%;
+      color: var(--color-white-1);
+
+      button {
+        width: 100%;
+        background: var(--color-button-apply);
+        color: var(--color-white-1);
+        height: 44px;
+        border-radius: 40px;
+        &:deep(span) {
+        }
+      }
+    }
+  }
+}
+
+.text-theme-dark {
+  color: var(--color-text);
+}
+.arrow-theme-dark {
+  fill: var(--color-text);
+}
+
+:global(.v-input__details) {
+  display: none;
+}

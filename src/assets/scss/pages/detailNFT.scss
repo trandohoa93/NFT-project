@@ -1,0 +1,342 @@
+.detail-nfts {
+    background-color: var(--color-background);
+    padding-top: 30px;
+    padding-bottom: 110px;
+
+    .tab-menu {
+        display: flex;
+        justify-content: space-between;
+
+        .left-detail-info {
+            position: relative;
+            margin-top: 700px;
+
+            .v-card--variant-elevated {
+                box-shadow: unset;
+                bottom: 0;
+            }
+
+            .v-card {
+                .v-slide-group {
+                    &:deep(.v-tab--selected) {
+                        background-color: var(--color-gray-7);
+                        border-radius: 20px;
+                        color: var(--color-text-tab);
+                    }
+                }
+
+                .v-tabs {
+                    background-color: var(--color-background);
+                    color: var(--color-text);
+                }
+
+                .info-tab {
+                    padding: 24px;
+                    border: 1px var(--color-border-1) solid;
+                    background-color: var(--color-background);
+                    margin-top: 30px;
+
+                    .title-info {
+                        font-size: 26px;
+                        font-weight: 700;
+                        line-height: 32.5px;
+                        text-align: left;
+                        color: var(--color-text);
+                    }
+
+                    .desc-info {
+                        font-size: var(--font-sm-3);
+                        font-weight: 500;
+                        line-height: 22.5px;
+                        text-align: left;
+                        color: var(--color-text-4);
+                    }
+                }
+            }
+        }
+
+        .right-detail-info {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            max-width: 700px;
+            position: relative;
+            z-index: 2;
+
+            .title-collection {
+                display: flex;
+                align-items: center;
+                font-size: var(--font-sm-2);
+                font-weight: 500;
+                line-height: 20px;
+                color: var(--color-text-4);
+                gap: 5px;
+
+                .text-collection {
+                    text-decoration: underline;
+                    cursor: pointer;
+                    font-weight: 700;
+                    line-height: 20px;
+                    color: var(--color-text);
+                }
+
+                .icon-check {
+                    height: 24px;
+                    width: 24px;
+                }
+            }
+
+            .id-detail {
+                font-size: var(--font-xl);
+                font-weight: 700;
+                line-height: 50px;
+                text-align: left;
+                color: var(--color-text);
+            }
+
+            .info-author {
+                display: flex;
+                align-items: center;
+                font-size: var(--font-sm-2);
+                font-weight: 500;
+                line-height: 20px;
+                color: var(--color-text-4);
+                gap: 5px;
+
+                .name-author {
+                    text-decoration: underline;
+                    cursor: pointer;
+                    font-weight: 700;
+                    line-height: 20px;
+                    color: var(--color-text);
+                }
+            }
+
+            .info-review {
+                padding: 10px 0px;
+                display: flex;
+                gap: 28px;
+                align-items: center;
+                font-size: var(--font-sm-2);
+
+                .number-view {
+                    font-weight: 700;
+                    line-height: 20px;
+                    text-align: left;
+                    color: var(--color-text);
+                }
+
+                .number-heart {
+                    font-weight: 700;
+                    line-height: 20px;
+                    text-align: left;
+                    color: var(--color-text);
+                }
+
+                .date-sale {
+                    font-weight: 700;
+                    line-height: 20px;
+                    text-align: left;
+                    color: var(--color-text);
+
+                    .date-time {
+                        font-size: 16px;
+                        background: -webkit-linear-gradient(left, #FE8C00 0%, #F83600 100%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+            }
+
+            .view-more {
+                font-size: var(--font-sm-3);
+
+                .text-view-container {
+                    font-weight: 500;
+                    line-height: 22.5px;
+                    text-align: left;
+                    color: var(--color-text-4);
+                }
+
+                .text-view-minimize {
+                    height: 46px;
+                    overflow-y: hidden;
+                }
+
+                .text-view-expand {
+                    height: 100%;
+                }
+
+                .text-view-more {
+                    text-decoration: underline;
+                    cursor: pointer;
+                    font-weight: 700;
+                    line-height: 22.5px;
+                    text-align: left;
+                    color: var(--color-text);
+                }
+            }
+
+            .buy-coin {
+                margin-top: 20px;
+                padding: 20px;
+                border: 1px #E2E5E8 solid;
+
+                .left-detail {
+                    background-color: var(--color-background-active);
+                    padding: 10px;
+
+                    .title-price {
+                        color: var(--color-text-4);
+                        font-size: var(--font-sm-4);
+                        font-weight: 600;
+                        line-height: 17.5px;
+                        text-align: left;
+
+                    }
+
+                    .quantity-coin {
+                        font-size: var(--font-md-2);
+                        font-weight: 700;
+                        line-height: 25px;
+                        text-align: left;
+                        color: var(--color-text);
+                    }
+
+                    .price-coin {
+                        color: #999999;
+                        font-weight: bold;
+                    }
+                }
+
+                .right-detail {
+                    background-color: var(--color-background-active);
+                    padding: 10px;
+
+                    .title-coin {
+                        color: var(--color-text-4);
+                        font-size: var(--font-sm-4);
+
+                        .text-red {
+                            font-size: var(--font-sm-2);
+                            background: -webkit-linear-gradient(left, #FE8C00 0%, #F83600 100%);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                        }
+                    }
+
+                    .quantity-coin {
+                        font-size: var(--font-md-2);
+                        font-weight: 700;
+                        line-height: 25px;
+                        text-align: left;
+                        color: var(--color-text);
+                    }
+
+                    .author-coin {
+                        color: var(--color-text-4);
+
+                        .by-author {
+                            color: var(--color-text);
+                            font-size: var(--font-sm-4);
+                            font-weight: bold;
+                            font-weight: 700;
+                            line-height: 17.5px;
+                            text-align: left;
+                        }
+                    }
+                }
+
+                .button-buy {
+                    width: 100%;
+                    background: black;
+                    border-radius: 20px;
+                }
+            }
+
+            .price-history {
+                padding: 20px;
+                border: 1px #E2E5E8 solid;
+                height: 230px;
+
+                .title-chart {
+                    display: flex;
+                    align-items: center;
+                    padding: 5px;
+
+                    .icon-chart {
+                        width: 24px;
+                        height: 24px;
+                        padding: 2px;
+                    }
+
+                    .text-chart {
+                        font-size: var(--font-sm-2);
+                        font-weight: 700;
+                        line-height: 20px;
+                        text-align: left;
+                        color: var(--color-text);
+                    }
+                }
+
+                .custom-chart {
+                    background-color: var(--color-gray-2);
+
+                    :deep(.apexcharts-canvas) {
+                        height: 230px !important;
+                        min-height: 230px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .more-collection {
+        margin-top: 100px;
+
+        .header-more-collection {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .title-more-collection {
+                font-size: 40px;
+                color: var(--color-text);
+                font-weight: 700;
+                line-height: 50px;
+                text-align: left;
+            }
+        }
+
+        .show-slide-product {
+            margin-top: 5%;
+
+            .v-sheet {
+                box-shadow: unset !important;
+            }
+
+            .custom-product {
+                padding: 0px 20px;
+            }
+        }
+    }
+}
+
+:global(.v-window) {
+    background-color: var(--color-background) !important;
+}
+
+@media screen and (max-width: 1280px) {
+    .detail-nfts {
+        .tab-menu {
+            .left-detail-info {
+                margin-top: 0;
+            }
+
+            .right-detail-info {
+                max-width: 100%;
+            }
+        }
+    }
+
+}   

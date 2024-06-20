@@ -1,0 +1,67 @@
+.base-checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+        .name, .address, .zip-phone {
+            display: flex;
+            gap: 16px;
+        }
+    
+        .first-name {
+            width: 50%;
+        }
+
+        .last-name {
+            width: 50%;
+            }
+
+        .address-input {
+            width: 50%;
+        }
+        
+        .checkbox {
+            margin-top: 2px;
+        }
+
+        .checkbox-label {
+            position: relative;
+            left: -12px;
+            font-size: var(--font-sm-2);
+            font-weight: 600;
+            line-height: 20px;
+            color: var(--color-text);
+
+            .v-input__details {
+                display: none;
+            }
+
+            .v-label {
+                opacity: 1;
+            }
+        }
+
+        .order-notes {
+            font-weight: 600;
+            line-height: 18.75px;
+            margin-bottom: 10px;
+            color: var(--color-text);
+            margin-top: 10px;
+
+
+            .subtitle {
+                margin-bottom: 10px;
+            }
+
+            .text-field {
+                border: 0;
+
+                .v-field__input {
+                    height: 240px;
+                    color: var(--color-text-3);
+                    opacity: 1;
+                }
+            }
+        }
+}
+

@@ -1,0 +1,95 @@
+.base-shopping-cart {
+    .cart-table {
+        background: var(--color-background-card);
+    }
+    
+    :deep(.cart-table) {
+        .v-table__wrapper {
+            overflow: hidden;
+        }
+    }
+
+    .row-title {
+    }
+
+    .data-title {
+        text-transform: uppercase;
+        color: var(--color-text-title-collection);
+        font-size: var(--font-sm-4);
+        font-weight: 700;
+        line-height: 17.5px;
+        height: 42px;
+        vertical-align: middle;
+    }
+
+    .icon-title {
+        vertical-align: middle;
+    }
+
+    .data-item {
+        vertical-align: middle;
+        border-bottom: 1px solid var(--color-border-1) !important;
+    }
+
+    .row-item:last-child .data-item {
+        border-bottom: 0 !important;
+    }
+
+    .item {
+        display: flex;
+        align-items: center;
+        padding: 20px 0;
+        height: 100%;
+    }
+
+    .text {
+        font-family: var(--font-secondary);
+        font-size: var(--font-sm-4);
+        font-weight: 700;
+        line-height: 17.5px;
+        color: var(--color-text);
+    }
+
+    .input-quality {
+        max-width: 110px;
+        border: 1px solid var(--color-gray-7);
+        border-radius: 90px;
+        padding: 11px 15px;
+    }
+
+}
+.dialog-delete {
+    background: var(--color-background-card);
+    padding: 16px 24px;
+}
+.dialog-title {
+    font-size: var(--font-md-2);
+    color: var(--color-text);
+}
+
+.dialog-button {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.dialog-button-cancel {
+    border: 2px solid var(--color-border-1);
+    width: 30%;
+    color: var(--color-text);
+}
+
+.dialog-button-ok {
+    background: var(--color-mix-1);
+    width: 30%;
+    color: var(--color-white-1);
+}
+
+:global(.v-selection-control__input > .v-icon) {
+    opacity: 1;
+}
+
+:global(.v-input__control) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

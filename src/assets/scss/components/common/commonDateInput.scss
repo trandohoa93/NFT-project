@@ -1,0 +1,40 @@
+.common-date-input-wrapper {
+    width: 100%;
+    margin-bottom: 8px;
+
+    .date-input-title {
+        font-size: var(--font-sm-2);
+        font-weight: 700;
+        line-height: 18px;
+        text-align: left;
+        color: var(--color-text);
+        margin-bottom: 10px;
+    }
+    
+    .date-input-group {
+        display: flex;
+        align-items: center;
+        position: relative;
+        
+        .date-icon {
+            position: absolute;
+            right: 18px;
+            pointer-events: none;
+        }
+    }
+
+    .date-input-error {
+        margin-top: 8px;
+        color: var(--color-red-1);
+        position: absolute;
+    }
+    
+}
+
+:global(.v-text-field .v-field--no-label input) {
+    color: var(--color-text-3);
+}
+
+:global(.v-picker.v-sheet.v-picker--with-actions) {
+    background-color: var(--color-white-1) !important;
+}

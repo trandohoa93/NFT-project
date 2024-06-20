@@ -1,0 +1,101 @@
+.policy-term-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-background);
+    padding: 40px 0 120px 0;
+
+    .tab-wrapper {
+        display: flex;
+        color: var(--color-gray-7);
+        height: 100px;
+        width: 100%;
+        border-bottom: 1px solid var(--color-border-1);
+        max-width: 1420px;
+        margin: 0 auto;
+
+        :deep(.v-slide-group__container) {
+            .v-slide-group__content {
+                justify-content: space-between;
+                gap: 50px;
+
+                .tab {
+                    height: 100px;
+                    padding-bottom: 15px;
+                    .tab-text{
+                        font-size: 40px;
+                        font-weight: 700;
+                        line-height: 50px;
+                        text-align: left;
+                    }
+
+                    .v-tab__slider {
+                        height: 4px;
+                    }
+                }
+            }
+        }
+    }
+
+    .tab-selected {
+        color: var(--color-text);
+    }
+
+    .tab-content {
+        max-height: 2070px;
+        overflow-y: auto;
+        scrollbar-width: none;
+
+        -webkit-scrollbar {
+            display: none;
+        }
+    }
+}  
+
+@media screen and (max-width: 920px) {
+    .policy-term-wrapper {
+        .tab-wrapper {
+            :deep(.v-slide-group__container) {
+                .v-slide-group__content {
+                    .tab {
+                        .tab-text{
+                            font-size: var(--font-xl-2);
+                        }
+                    }
+                }
+            }
+        }
+    }  
+}
+
+@media screen and (max-width: 675px) {
+    .policy-term-wrapper {
+        .tab-wrapper {
+            :deep(.v-slide-group__container) {
+                .v-slide-group__content {
+                    .tab {
+                        .tab-text{
+                            font-size: var(--font-md-2);
+                        }
+                    }
+                }
+            }
+        }
+    }  
+}
+
+@media screen and (max-width: 675px) {
+    .policy-term-wrapper {
+        .tab-wrapper {
+            :deep(.v-slide-group__container) {
+                .v-slide-group__content {
+                    gap: 10px;
+                    .tab {
+                        .tab-text{
+                            font-size: var(--font-sm-2);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

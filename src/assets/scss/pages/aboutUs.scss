@@ -1,0 +1,274 @@
+.about-us-wrapper {
+    position: relative;
+    z-index: 1;
+    padding-top: 100px;
+    padding-bottom: 150px;
+
+    .about-benefits-wrapper {
+        width: 648px;
+        margin-bottom: 100px;
+
+        .about-benefits {
+            display: flex;
+            flex-direction: column;
+            color: var(--color-text);
+            gap: 32px;
+
+            .benefit {
+                display: flex;
+                gap: 16px;
+                color: var(--color-text-4);
+                justify-content: flex-start;
+
+                .benefit-content {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+
+                    .benefit-title {
+                        font-size: var(--font-md-1);
+                        font-weight: 700;
+                        line-height: 30px;
+                        text-align: left;
+                        color: var(--color-text);
+                    }
+
+                    .benefit-desc {
+                        font-size: var(--font-sm-3);
+                        font-weight: 500;
+                        line-height: 22.5px;
+                        text-align: left;
+                    }
+                }
+
+            }
+        }
+    }
+
+
+    .about-roadmap-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 100px;
+
+        .about-roadmap {
+            display: flex;
+            flex-direction: column;
+
+            .roadmap-milestone-group {
+                display: flex;
+                gap: 50px;
+            }
+
+            .roadmap-milestone {
+                background:  var(--color-no-layouts-background);
+                padding: 25px 31px 29px 28px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                justify-content: flex-start;
+                align-items: start;
+                overflow: hidden;
+                position: relative;
+                max-width: 540px;
+
+                .roadmap-phase {
+                    background: var(--color-mix-1);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-size: var(--font-sm-2);
+                    font-weight: 700;
+                    line-height: 20px;
+                    text-align: left;
+                    text-transform: uppercase;
+                    position: relative;
+                    z-index: 1;
+                }
+
+                .roadmap-title {
+                    font-size: var(--font-xl-2);
+                    font-weight: 700;
+                    line-height: 40px;
+                    text-align: left;
+                    color: var(--color-text);
+                    position: relative;
+                    z-index: 1;
+                }
+
+                .roadmap-desc {
+                    font-size: var(--font-sm-3);
+                    font-weight: 500;
+                    line-height: 22.5px;
+                    text-align: left;
+                    color: var(--color-text);
+                    position: relative;
+                    z-index: 1;
+                }
+
+                .roadmap-progression {
+                    font-size: var(--font-md-2);
+                    font-weight: 700;
+                    color: var(--color-text);
+                    border-radius: 50%;
+                    width: 44px;
+                    height: 44px;
+                    background: var(--color-mix-1);
+                    white-space: wrap;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    z-index: 1;
+                    right:16px;
+                    top: 16px;
+                    transform: rotate(10deg);
+                }
+
+                .roadmap-percent {
+                    font-size: 14px;
+                    font-weight: 700;
+                    text-align: left;
+                }
+            }
+
+            .roadmap-divider {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                
+                .divider-line {
+                    border: 1px solid var(--color-border-1);
+                    position: absolute;
+                    height: 100%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+
+                .divider-dot-wrapper {
+                    border-radius: 50%;
+                    border: 2px solid var(--color-border-1);
+                    width: 30px;
+                    height: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    z-index: 2;
+                    background-color: var(--color-background);
+                    margin: auto 0;
+                    
+
+                    .divider-dot {
+                        border-radius: 50%;
+                        background: var(--color-mix-1);
+                        margin: auto;
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    .about-dashboard-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 130px;
+        justify-content: center;
+        align-items: center;
+
+        .dashboard {
+            color: var(--color-text);
+
+            .dashboard-title {
+                font-size: 90px;
+                font-weight: 700;
+                line-height: 112.5px;
+                text-align: left;
+            }
+
+            .dashboard-desc {
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 30px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.about-title {
+    font-size: var(--font-xxl);
+    color: var(--color-text);
+    font-family: var(-font-primary);
+    font-weight: 900;
+    line-height: 60.19px;
+    text-align: left;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+}
+
+.responsive {
+    visibility: hidden;
+}
+
+@media screen and (max-width: 961px) {
+    .about-us-wrapper {
+    padding-top: 50px;
+
+        .about-benefits-wrapper {
+            width: 100%;   
+
+            .about-benefits {
+                .benefit {
+                    .benefit-content {
+                        .benefit-title {
+                            font-size: var(--font-md-1);
+                        }
+                    }
+                }
+            }     
+        }
+
+        .about-roadmap-wrapper {
+            .about-roadmap {
+                gap: 30px;
+
+                .roadmap-divider {
+                    display: none;
+                }
+            }
+        }
+
+        .about-dashboard-wrapper {
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+            flex-direction: column;
+
+            .dashboard {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .dashboard-title {
+                    font-size: var(--font-xxl);
+                }
+            }
+        }
+    }
+
+    .about-title {
+        font-size: var(--font-xl-2);
+    }
+
+    .responsive {
+        visibility: visible;
+        display: none !important;
+    }
+}
+
+

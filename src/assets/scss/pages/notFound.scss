@@ -1,0 +1,112 @@
+.not-found-wrapper {
+    background-color: var(--color-background);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .not-found-left {
+        position: relative;
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+
+        .not-found-title {
+            color: var(--color-orange-1);
+            font-size: 250px;
+            font-weight: 700;
+            line-height: 312.5px;
+        }
+
+        .not-found-sub-title {
+            font-size: var(--font-xxl);
+            font-weight: 700;
+            line-height: 60px;
+            text-align: left;
+            color: var(--color-text);
+        }
+
+        .not-found-desc {
+            font-size: var(--font-md-2);
+            font-weight: 500;
+            line-height: 30px;
+            color: var(--color-text-small);
+        }
+
+        .not-found-link {
+            margin-top: 10px;
+        }
+    }
+
+    .not-found-right {
+        position: relative;
+        z-index: 3;
+
+        .not-found-image {
+            position: relative;
+            right: -140px;
+        }
+    }
+}
+
+@media screen and (max-width: 1831px) {
+    .not-found-wrapper {
+        .not-found-right {
+            .not-found-image {
+                width: 800px;
+                height: 800px;
+                right: 0px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .not-found-wrapper {
+        padding-bottom: 100px;
+        .not-found-right {
+            .not-found-image {
+                width: 500px;
+                height: 500px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .not-found-wrapper {
+        flex-direction: column-reverse;
+        padding: 100px 50px;
+        .not-found-left {
+            align-items: center;
+        }
+        .not-found-right {
+            .not-found-image {
+                width: 300px;
+                height: 300px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .not-found-wrapper {
+        flex-direction: column-reverse;
+        padding: 100px 50px;
+
+        .not-found-left {
+            .not-found-title {
+                font-size: var(--font-xxl-1);
+                line-height: 100px;
+            }
+        }
+
+        .not-found-right {
+            .not-found-image {
+                width: 300px;
+                height: 300px;
+            }
+        }
+    }
+}

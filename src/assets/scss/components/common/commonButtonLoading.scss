@@ -1,0 +1,21 @@
+.common-submit-button-wrapper {
+    .submit-button {
+        display: block;
+        background: linear-gradient(135deg, #FE8C00 0%, #F83600 100%);
+        text-align: center;
+        border-radius: 90px;
+        font-size: var(--font-md-2);
+        font-weight: 700;
+        line-height: 20px;
+        color: var(--color-primary-light);
+        padding: 15px 32px;
+    
+        &:hover {
+            opacity: 70%;
+        }
+    }
+
+    .full-width {
+        width: 100%;
+    }
+}

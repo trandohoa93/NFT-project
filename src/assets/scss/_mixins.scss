@@ -1,0 +1,70 @@
+@mixin pageMediumStyle {
+    font-family: var(--font-secondary);
+    font-size: var(--font-sm-2);
+    line-height: 20px;
+    font-weight: 700;
+    white-space: nowrap;
+    color: var(--color-text);
+};
+
+@mixin pageSmallStyle {
+    font-size: var(--font-sm-3);
+    font-weight: 500;
+    line-height: 18.75px;
+    color: var(--color-text-desc);
+};
+
+@mixin pageGreyDivider {
+    background-color: var(--color-border-secondary);
+    height: 1px;
+    width: 100%;
+};
+
+@mixin fontBold {
+    font-weight: bold;
+};
+
+@mixin cardTitle {
+    font-weight: bold;
+    font-size: var(--font-sm-2);
+};
+
+@mixin cardSubTitle {
+    color: var(--gray-100);
+    font-size: var(--font-xs);
+    font-weight: 600;
+};
+
+@mixin button-navigation($position, $top, $side) {
+    position: absolute;
+    top: $top;
+    #{$position}: $side;
+    z-index: 2;
+};
+
+@mixin pageBackgroundCircular($width : 800px, $height: 800px) {
+    position: absolute;
+    z-index: 1;
+    width: 800px;
+    height: 800px;
+    background-image: radial-gradient(circle closest-side, #ff892f, var(--color-background));
+    opacity: 0.35;
+    pointer-events: none;
+    width: $width;
+    height: $height;
+    filter: blur(200px);
+}
+
+@mixin pageCircularTopLeft() {
+    top: -500px;
+    left: -350px;
+}
+
+@mixin pageCircularTopCenter() {
+    top: -150px;
+    left: -100px;
+}
+
+@mixin pageCircularTopRight() {
+    right: 70px;
+}

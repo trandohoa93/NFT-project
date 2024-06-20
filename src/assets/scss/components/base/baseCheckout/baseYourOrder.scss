@@ -1,0 +1,116 @@
+.base-your-order {
+    .cart-total-card {
+        background-color: var(--color-background);
+        border-image: var(--color-mix-1) 30;
+        border-width: 3px;
+        border-style: solid;
+        padding: 35px 32px 38px 32px;
+    }
+
+    .item-info  {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid var(--color-border-1);
+    }
+
+    .item-info-card {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+
+        .item-left {
+            display: flex;
+            gap: 6px;
+            font-size: var(--font-sm-3);
+            line-height: 18.75px;
+            color: var(--color-text);
+            .name, .id {
+                font-weight: 500;
+            }
+            .value {
+                font-weight: 700;
+            }
+            
+        }
+        .item-right {
+            display: flex;
+            font-size: var(--font-sm-2);
+            font-weight: 700;
+            line-height: 20px;
+            color: var(--color-text);
+        }
+    }
+
+    .item-sub {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid var(--color-border-1);
+    }
+
+    .item-sub-card {
+        display: flex;
+        justify-content: space-between;
+        font-size: var(--font-sm-2);
+        font-weight: 700;
+        line-height: 20px;
+        color: var(--color-text);
+        padding: 0;
+
+        .radio {
+            flex-direction: row-reverse;
+        }
+
+        .radio-text {
+            font-size: var(--font-sm-3);
+            font-weight: 600;
+            line-height: 18.75px;
+        }
+
+        .radio-text-price {
+            background: var(--color-mix-1);
+            background-clip: text;
+            color: transparent;
+        }
+
+        :deep(.radio-button) {
+            .v-input__details {
+                display: none;
+            }
+        }
+    }
+
+    .item-total {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid var(--color-border-1);
+    }
+
+    .item-total-card {
+        display: flex;
+        justify-content: space-between;
+        font-size: var(--font-md-1);
+        font-weight: 700;
+        line-height: 30px;
+        color: var(--color-text);
+        padding: 0;
+    }
+
+    .btn-checkout {
+        height: 50px;
+        width: 100%;
+        background: var(--color-btn-checkout);
+        color: var(--color-white-1);
+    }
+    .btn-continue {
+        border: 2px solid var(--color-border-1);
+        height: 50px;
+        width: 100%;
+        color: var(--color-text);
+    }
+}

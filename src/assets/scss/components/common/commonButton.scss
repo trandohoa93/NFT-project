@@ -1,0 +1,38 @@
+.common-button-wrapper {
+    
+    .button {
+        display: block;
+        text-align: center;
+        border-radius: 90px;
+        font-size: var(--font-sm-2);
+        font-weight: 700;
+        line-height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        max-height: 50px;
+        height: 50px;
+    
+        &:hover {
+            opacity: 70%;
+        }
+    }
+
+
+    .btn-primary {
+        background-color: var(--color-text);
+        color: var(--color-background)
+    }
+
+    .btn-outline {
+        background-color: transparent;
+        color: var(--color-text);
+        border: 2px solid var(--color-gray-3);
+    }
+}
+
+
+.full-width {
+    width: 100%;
+}

@@ -1,0 +1,194 @@
+.top-collection {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-size: var(--font-sm-2);
+    font-weight: bold;
+    padding: 100px 252px;
+        
+    .top-collection-header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 32px;
+        height: 50px;
+        gap: 10px;
+
+        .header-left {
+            font-size: var(--font-xl);
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--color-text);
+
+            .title {
+                color: var(--color-text);
+            }
+
+            .top-collection-time {
+                outline: none;
+                background-image: url("@/assets/images/arrow-down.png");
+                background-size: 16px;
+                background-position: right center; 
+                background-repeat: no-repeat;
+                padding-right: 24px;
+                color: var(--color-text);
+            }
+        }
+
+        .header-right {
+            .btn-view-all {
+                height: 100%;
+                border: 2px solid  var(--color-background-chain);
+                margin-left: 8px;
+            }
+        }
+    }
+
+
+    .top-collection-body {
+        overflow-x: auto;
+
+        .top-collection-table {
+            border-collapse: separate;
+            border-spacing: 0 20px;
+            min-width: 900px;
+            background-color: var(--color-background);
+            color: var(--color-text);
+
+            .collection-title {
+                background-color: var(--color-background);
+                color: var(--gray-400);
+                font-weight: bold;
+                box-shadow: none;
+                height: 22px;
+                text-align: right;
+
+            }
+            .collection-cell {
+                vertical-align: middle;
+                text-align: right;
+                border: none;
+                height: 70px;
+            }
+            .collection-order {
+                font-size: var(--font-xl);
+                background: var(--color-background-sixth);
+                background-clip: text;
+                color: transparent;
+            }
+
+            .collection-name {
+                font-size: var(--font-sm-1);
+            }
+
+            .collection-subtext {
+                color: var(--gray-400);
+            }
+
+            .icon-heart {
+                font-size: var(--font-md-1);
+                cursor: pointer;
+            }
+        }
+    }
+
+    .decrease {
+        @include fontBold;
+        color: var(--color-danger);
+    }
+
+    .increase {
+        @include fontBold;
+        color: var(--color-success);
+    }
+
+    @media screen and (max-width: 1830px) {
+       padding: 100px 152px;
+    }
+
+    @media screen and (max-width: 1540px) {
+        .top-collection-header {
+            .header-left {
+                font-size: 24px;
+            }
+            .header-right {
+                .chain-wrapper {
+                    .chain-title {
+                        padding: 14px 12px 18px 12px;
+                    }
+                    .chain-icons {
+                        padding: 16px 8px;
+                        gap: 20px;
+                    }
+                }
+                .btn-view-all {
+                    height: auto;
+                }
+            }
+        }
+        .top-collection-table {
+            .collection-title {
+                font-size: 12px;
+            }
+            .collection-cell {
+                font-size: 12px;
+
+                .collection-order {
+                    font-size: 20px;
+                }
+
+                .collection-name {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 1280px) {
+        padding: 100px 10px;
+
+        .top-collection-header {
+            width: 100%;
+            flex-direction: column;
+            height: 100%;
+            align-items: center;
+            gap: 24px;
+
+            .header-left {
+                font-size: 30px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        padding: 100px 10px 50px 10px;
+
+        .top-collection-header {
+            .header-left {
+                font-size: 30px;
+            }
+
+            .header-right {
+                flex-direction: column;
+                gap: 8px;
+
+                .chain-wrapper {
+                    margin: 0;
+
+                    .chain-icons {
+                        width: 100%;
+                        padding: 16px 4px;
+                        gap: 10px;
+                        justify-content: space-between;
+                    }
+                }
+                .btn-view-all {
+                    display: inline-block;
+                    padding: 8px 0;
+                }
+            }
+        }
+    }
+
+}
+

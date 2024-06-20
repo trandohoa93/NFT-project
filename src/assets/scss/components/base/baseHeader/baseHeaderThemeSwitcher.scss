@@ -1,0 +1,100 @@
+ .theme-switcher-wrapper {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-right: 70px;
+    position: relative;
+    z-index: 9;
+
+    .theme-switcher-label {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+
+        .theme-switcher-input {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+            border: 2px solid var(--color-switcher-light);
+        }
+
+      
+        .theme-switcher-btn {
+            --switch-container-width: 72px;
+            --switch-size: calc(var(--switch-container-width) / 2 + 2.5px);
+
+            display: flex;
+            align-items: center;
+            position: relative;
+            height: 40px;
+            flex-basis: var(--switch-container-width);
+            border: 1px solid #792D1080;
+            border-radius: var(--switch-size);
+            flex-shrink: 0;
+            transition: background-color 0.25s ease-in-out;
+            background-color: var(--color-background);
+
+            &::before {
+            content: "";
+            position: absolute;
+            left: 2px;
+            height: 32px ;
+            width: 32px;
+            border-radius: 9999px;
+            border: none;
+            background-color: var(--color-theme-btn);
+            transition: transform 0.1s ease-in-out;
+            }
+        }
+
+        // .theme-switcher-input:checked + .theme-switcher-btn {
+        //     background-color: var(--color-primary-light);
+        //     background-color: var();
+        // }
+
+        .theme-switcher-input:checked + .theme-switcher-btn::before {
+            border-color: var(--primaryDarkestColor);
+            /* Move the inner circle to the right */
+            transform: translateX(
+              calc(var(--switch-container-width) - var(--switch-size))
+            );
+          }
+
+        .theme-switcher-icon {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+        }
+
+        .theme-switcher-icon-dark {
+            top: 50%;
+            right: -58px;
+            transform: translateY(-50%);
+            opacity: 1;
+        }
+
+        .theme-switcher-icon-light {
+            top: 50%;
+            left: 8px;
+            transform: translateY(-50%);
+            opacity: 1;
+        }
+
+        .fade-enter-active,
+        .fade-leave-active {
+        transition: opacity 0.5s ease;
+        }
+    
+        .fade-enter-from,
+        .fade-leave-to {
+        opacity: 0;
+        }
+    }
+  }

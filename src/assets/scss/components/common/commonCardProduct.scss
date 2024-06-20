@@ -1,0 +1,88 @@
+.card-product {
+    font-family: var(--font-secondary);
+    background: var(--color-background-card);
+    color: var(--color-text);
+    padding: 0 !important;
+    .card-product-img {
+        align-items: end;
+        color: var(--color-text);
+        position: relative;
+    }
+    .card-product-header {
+        @include fontBold;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .card-product-heart {     
+        position: absolute;
+        right: 12px;
+        top: 10px;
+        width: 36px;
+        height: 36px;
+        background-color: var(--gray-200);
+        cursor: pointer;
+    }
+    .card-product-icon {
+        display: flex;
+        color: var(--color-white-1);
+        font-size: var(--font-md-2);
+    }
+    .card-product-title {
+        @include cardTitle;
+        flex: 1;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        color: var(--color-text);
+    }
+    .card-product-number {
+        padding: 2px 8px;
+        border: 2px solid var(--gray);
+        border-radius: 10px;
+        font-size: var(--font-xs);
+    }
+    .card-product-text {
+        @include cardSubTitle;
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 0;
+
+        .text-label {
+            color: var(--gray-100)
+        }
+    }
+    .card-product-value {
+        @include fontBold;
+        color: var(--color-text);
+        display: flex;
+        align-items: center;
+        font-size: var(--font-sm-4);
+
+        p {
+            max-width: 80px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: normal;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            line-clamp: 1;
+            -webkit-box-orient: vertical;
+        }
+    }
+}
+
+.bg-card {
+    background: var(--color-mix-10);
+    height: 280px;
+}
+
+.decrease {
+  @include fontBold;
+  color: var(--color-danger);
+}
+
+.increase {
+  @include fontBold;
+  color: var(--color-success);
+}

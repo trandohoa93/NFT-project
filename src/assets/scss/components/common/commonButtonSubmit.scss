@@ -1,0 +1,25 @@
+.common-submit-button-wrapper {
+    .submit-button {
+        display: block;
+        text-align: center;
+        border-radius: 90px;
+        font-size: var(--font-sm-2);
+        font-weight: 700;
+        line-height: 20px;
+        color: var(--color-white-1);
+        padding: 15px 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        height: 50px;
+    
+        &:hover {
+            opacity: 70%;
+        }
+    }
+
+    .full-width {
+        width: 100%;
+    }
+}

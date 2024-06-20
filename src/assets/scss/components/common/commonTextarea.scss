@@ -1,0 +1,34 @@
+.common-textarea-group {
+    width: 100%;
+    margin-bottom: 8px;
+
+    .textarea-title {
+        font-size: var(--font-sm-2);
+        font-weight: 700;
+        line-height: 18px;
+        text-align: left;
+        color: var(--color-text);
+        margin-bottom: 10px;
+    }
+
+    .textarea-error {
+        margin-top: 8px;
+        color: var(--color-danger);
+        position: absolute;
+    }
+}
+
+:global(.v-field--variant-outlined .v-label.v-field-label--floating) {
+    background-color: var(--color-gray-2);
+    padding: 0.5px;
+}
+
+:global(.v-field--variant-outlined .v-field__outline__notch::before) {
+    border-width: none;
+}
+
+:global(.v-textarea--no-resize .v-field__input) {
+    min-height: unset !important;
+    color: var(--color-text-3);
+}
+

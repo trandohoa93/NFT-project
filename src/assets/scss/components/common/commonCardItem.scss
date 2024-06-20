@@ -1,0 +1,61 @@
+.card-item {
+    font-family: var(--font-secondary);
+    .card {
+        display: flex;
+        gap: 32px;
+        max-width: 550px;
+        border-radius: 0;
+    }
+    .card-img {
+        max-width: 150px;
+    }
+    .card-img:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--color-mix-12);
+      }
+    .text-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+        padding: 0;
+    }
+    .colection {
+        display: flex;
+        gap: 4px;
+    }
+    .id-card {
+        display: flex;
+        font-size: var(--font-xl-2);
+        font-weight: 700;
+        line-height: 18.75px;
+        color: var(--color-text);
+    }
+    .owned {
+        display: flex;
+        gap: 4px;
+    }
+
+    .text-collection, .text-owned {
+        font-size: var(--font-sm-3);
+        font-weight: 500;
+        line-height: 18.75px;
+        color: var(--color-text-4);
+    }
+
+    .collection-name, .owned-name {
+        font-size: var(--font-sm-2);
+        font-weight: 700;
+        line-height: 20px;
+        color: var(--color-text);
+        text-decoration: underline;
+    }
+}

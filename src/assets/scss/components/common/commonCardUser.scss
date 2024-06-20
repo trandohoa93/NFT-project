@@ -1,0 +1,74 @@
+.card-user {
+    display: flex;
+    background: var(--color-background-card);
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    padding: 0px 16px;
+
+    font-family: var(--font-secondary);
+    .card-user-name {
+        @include cardTitle;
+        display: flex;
+        gap: 4px;
+        color: var(--color-text);
+    }
+
+    .card-name {
+        max-width: 150px;
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        line-clamp: 1;
+        -webkit-box-orient: vertical;
+    }
+
+    .card-avatar {
+        border: 3px solid var(--color-white-1);
+    }
+
+    .v-card-item {
+        padding: 0;
+    }
+
+    .card-text {
+        padding: 0;
+    }
+
+    .card-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0px;
+    }
+
+    .card-user-icon {
+        width: 20px;
+        height: 20px;
+        background-image: url("@/assets/images/checkbox-shape.svg");
+        font-size: var(--font-xs);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--color-white);
+    }
+    .card-user-follower {
+        color: var(--gray-100);
+        font-weight: 600;
+    }
+
+    .btn-follow {
+        border: 2px solid var(--color-orange-1);
+        color: var(--color-orange-1);
+        background: var(--color-background);
+    }
+}
+
+
+
+
+

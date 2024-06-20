@@ -1,0 +1,9 @@
+  .router-view-wrapper {
+    background-color: var(--color-background);
+    position: relative;
+    z-index: 2;
+
+    .router-view {
+        margin: 0 auto;
+    }
+  }

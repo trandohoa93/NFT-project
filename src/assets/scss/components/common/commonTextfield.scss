@@ -1,0 +1,72 @@
+.common-text-field-group {
+    width: 100%;
+    margin-bottom: 8px;
+
+    .text-field-title {
+        font-size: var(--font-sm-2);
+        font-weight: 700;
+        line-height: 18px;
+        text-align: left;
+        margin-bottom: 10px;
+        color: var(--color-text);
+
+        .text-field-required {
+            color: var(--color-red-1);
+        }
+    }
+
+    .text-field-button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .text-field-image {
+            pointer-events: none;
+        }
+    }
+
+    .text-field-error {
+        margin-top: 8px;
+        color: var(--color-red-1);
+        position: absolute;
+        
+    }
+
+    :deep(.text-field) {
+        .v-field--variant-outlined .v-field__outline {
+            --v-field-border-width: 0px;
+            --v-field-border-opacity: 1;
+        }
+
+        .v-field__input, .v-field__field {
+            height: 50px;
+        }
+
+        .v-field__input {
+            min-height: unset !important;
+            color: var(--color-text-3);
+        }
+    }
+
+
+}
+
+:global(.v-field--variant-outlined .v-label.v-field-label--floating) {
+    background-color: var(--color-gray-2);
+    padding: 0.5px;
+}
+
+:global(.v-field--variant-outlined .v-field__outline__notch::before) {
+    border-width: none;
+}
+
+
+
+// :global(.v-field--variant-outlined .v-field__outline__start),
+// :global(.v-field--variant-outlined .v-field__outline__end) {
+//     border: none;
+// }
+
+// :global(.v-field--variant-outlined .v-field__outline__notch::before),
+// :global(.v-field--variant-outlined .v-field__outline__notch::after) {
+//      border: none;
+// }

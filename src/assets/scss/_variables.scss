@@ -1,0 +1,243 @@
+  :root {
+    --color-white-1: #FFFEFE;
+    --color-white-2: #fff;
+    --color-white-3: #ffffff;
+    
+    --color-gray-1: #EBF0F3;
+    --color-gray-2: #F0F1F4;
+    --color-gray-3: #E2E5E8;
+    --color-gray-4: #E0E5E8;
+    --color-gray-5: #E7E7E7;
+    --color-gray-6: #c7c6c6;
+    --color-gray-7: #aaaaaa;
+    --color-gray-8: #999999;
+    --color-gray-9: #555555;
+    --color-gray-10: #333333;
+    --color-gray-11: rgba(240, 241, 244, 0.2);
+    --color-gray-12: rgba(240, 241, 244, 0.5);
+    --color-gray-13: #949494;
+    
+
+    --color-black-1: #050505;
+    --color-black-2: #000;
+    --color-black-3: #1E1D1D;
+    --color-black-4: #00000040;
+
+
+    --color-orange-1: #FE8C00;
+    --color-orange-2: #C0542B;
+    --color-orange-3: #F83600;
+    --color-orange-4: #bb3500;
+    --color-orange-5: #E95E2A;
+    
+    --color-red-1: #E6001C;
+    --color-red-2: #FF001F;
+    --color-red-3: #dc1f1fb3;
+
+    --color-blue-1: #0036FF;
+    --color-blue-2: #2CD9FF;
+    --color-blue-3: #2C3E7C;
+    --color-blue-4: #0032E3;
+    --color-blue-5: #014EC8;
+;
+;
+
+    --color-green-1: #40C72A;
+    --color-green-2: #00CB9A;
+
+    --color-purple-1: #FF2CF7;
+    --color-purple-2: #681155;
+    --color-purple-3: #F4B7A1;
+    --color-purple-4: #FFEBDB;
+
+
+    --color-brown-1: #792D1080;
+    --color-brown-2: #9E3D19;
+
+    --color-mix-1: linear-gradient(135deg, #FE8C00 0%, #F83600 100%);
+    --color-mix-2: radial-gradient(at 900px, #8F2200 100%, #000000 100%), linear-gradient(to bottom, #1A1515 0%, #2D2929 100%);
+    --color-mix-3:  linear-gradient(0deg, #2C3E7C, #2C3E7C),
+    radial-gradient(50% 50% at 50% 50%, rgba(44, 217, 255, 0.5) 0%, rgba(0, 54, 255, 0) 90.58%);
+    --color-mix-4: #681155 radial-gradient( #FF2CF7  50% #FF001F 0%);
+    --color-mix-5: linear-gradient(180deg, rgba(255, 177, 143, 0) 53.79%, #dc1f1fb3 100%);
+    --color-mix-6: linear-gradient(180deg, #1E1D1D 12.63%, #FFFFFF 87.65%);
+    --color-mix-7: linear-gradient(329.31deg, #1A1515 3.77%, #2D2929 88.73%), 
+      radial-gradient(137.32% 106.22% at 86.96% 112.67%, rgba(143, 34, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%), 
+      linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    --color-mix-8: radial-gradient(circle closest-side,#ff892f, #FFFEFE);
+    --color-mix-9: radial-gradient(circle closest-side,#FE8C00, #050505);
+    --color-mix-10: linear-gradient(180deg, rgba(255, 177, 143, 0) 53.79%, #dc1f1fb3 100%);
+    --color-mix-11: linear-gradient(to bottom right, #2B2727, #251C1B, #341811);
+    --color-mix-12: linear-gradient(180deg, rgba(255, 177, 143, 0) 53.79%, rgba(220, 31, 31, 0.7) 100%);
+    --color-mix-13: linear-gradient(180deg, rgba(22, 22, 22, 0) 30.52%, rgba(16, 16, 16, 0.8) 100%);
+    --color-mix-14: linear-gradient(to right, #fde6d4, #f9d5c5);
+    --color-mix-15: linear-gradient(0deg, #1A1515 100%, #2D2929 100%), radial-gradient(circle, #8F2200 40%, #000000 0%, #000000 20%);
+
+    --color-white: #fff;
+    --color-black: #000;
+
+    --font-primary: 'Orbitron';
+    --font-secondary: 'Bai Jamjuree';
+
+    --font-xxl-1: 70px;
+    --font-xxl-2: 60px;
+    --font-xxl-3: 64px;
+    --font-xxl: 48px;
+    --font-xl: 40px;
+    --font-xl-2: 32px;
+    --font-md-1: 24px;
+    --font-md-2: 20px;
+    --font-sm-1: 18px;
+    --font-sm-2: 16px;
+    --font-sm-3: 15px;
+    --font-sm-4: 14px;
+    --font-xs: 12px;
+
+    //---light
+    --color-background-active: var(--color-gray-2);
+    --color-background-card: var(--color-white-1);
+    --color-background-chain: var(--color-gray-2);
+    --color-background-filter: var(--color-gray-2);
+    --color-background-img-detail: var(--color-mix-13);
+    --color-background-profile: var(--color-white-1);
+    --color-background-upload: var(--color-white-1);
+    --color-background: var(--color-white-1);
+    --color-bg-dropdown: var(--color-mix-14);
+    --color-border-1: var(--color-gray-3);
+    --color-border-2: var(--color-gray-8);
+    --color-border-article-bottom: var(--color-black-4);
+    --color-border-article: var(--color-gray-3);
+    --color-border-profile: var(--color-white-1);
+    --color-border: var(--color-gray-9);
+    --color-button-apply: var(--color-mix-1);
+    --color-button-buy: var(--color-black-1);
+    --color-circle: var(--color-mix-8);
+    --color-icon-active:var(--color-black-1);
+    --color-icon-un-active:var(--color-gray-8);
+    --color-no-layouts-background: var(--color-white-3);
+    --color-slider-article: var(--color-white-1);
+    --color-tab-filter: var(--color-gray-3);
+    --color-text--title-marketplace: var(--color-black-1);
+    --color-text-2: var(--color-gray-9);
+    --color-text-3: var(--color-gray-8);
+    --color-text-4: var(--color-gray-9);
+    --color-text-desc: var(--color-gray-9);
+    --color-text-small: var(--color-gray-9);
+    --color-text-title-collection: var(--color-gray-8);
+    --color-bg-apply-coupon-checkout: var(--color-gray-2);
+    --color-bg-apply-coupon-checkout: var(--color-gray-2);
+    --color-bg-btn-coupon-checkout: var(--color-gray-8);
+    --color-bg-btn-coupon-checkout: var(--color-gray-8);
+    --color-text: var(--color-black-1);
+    --color-theme-border: var(--color-brown-1);
+    --color-theme-btn: var(--color-orange-2);
+    --color-background-card: var(--color-white-1);
+    --color-background-img-detail: var(--color-mix-13);
+    --color-background-active: var(--color-gray-2);
+    --color-icon-active: var(--color-black-1);
+    --color-icon-in-active: var(--color-gray-8);
+    --color-icon-checkbox: var(--color-black-1);
+    --color-bg-apply-coupon: var(--color-gray-2);
+    --color-bg-apply-coupon-checkout: var(--color-gray-2);
+    --color-bg-btn-coupon-checkout: var(--color-gray-8);
+    --color-btn-checkout: var(--color-black-1);
+    --color-bg-dropdown: var(--color-mix-14);
+    --color-icon-dropdown: var(--color-gray-9);
+    --color-text-area: var(--color-gray-2);
+    --color-button-copy-1: var(--color-orange-3);
+    --color-button-copy-2: var(--color-orange-1);
+    --color-button-filter: var(--color-gray-2);
+
+    //---dark
+    .dark {
+      --color-background-active: var(--color-gray-10);
+      --color-background-card: var(--color-mix-7);
+      --color-background-chain: var(--color-gray-10);
+      --color-background-filter: var(--color-gray-8);
+      --color-background-img-detail: var(--color-mix-12);
+      --color-background-profile: var(--color-mix-7);
+      --color-background-upload: var(--color-mix-15);
+      --color-background: var(--color-black-1);
+      --color-bg-dropdown: var(--color-mix-2);
+      --color-border-1: var(--color-gray-9);
+      --color-border-2: var(--color-gray-9);
+      --color-border-article-bottom: var(--color-black-1);
+      --color-border-article: var(--color-black-1);
+      --color-border-profile: var(--color-gray-9);
+      --color-border: var(--color-gray-8);
+      --color-button-apply: var(--color-gray-8);
+      --color-button-buy: var(--color-mix-1);
+      --color-circle: var(--color-mix-9);
+      --color-icon-active:var(--color-white-1);
+      --color-icon-un-active:var(--color-gray-8);
+      --color-no-layouts-background: var(--color-mix-7);
+      --color-slider-article: var(--color-mix-11);
+      --color-tab-filter: var(--color-gray-10);
+      --color-text--title-marketplace: var(--color-white-1);
+      --color-text-2: var(--color-gray-5);
+      --color-text-3: var(--color-gray-7);
+      --color-text-4: var(--color-gray-7);
+      --color-text-desc: var(--color-gray-8);
+      --color-text-small: var(--color-gray-3);
+      --color-text-title-collection: var(--color-gray-7);
+      --color-bg-apply-coupon-checkout: var(--color-gray-12);
+      --color-bg-apply-coupon-checkout: var(--color-gray-12);
+      --color-bg-btn-coupon-checkout: var(--color-mix-1);
+      --color-bg-btn-coupon-checkout: var(--color-mix-1);
+      --color-text: var(--color-white-1);
+      --color-theme-border: var(--color-brown-2);
+      --color-theme-btn: var(--color-purple-3);
+      --color-icon-in-active:var(--color-gray-8);
+      --color-icon-checkbox:var(--color-gray-7);
+      --color-bg-apply-coupon:var(--color-gray-11);
+      --color-bg-apply-coupon-checkout: var(--color-gray-12);
+      --color-bg-btn-coupon-checkout: var(--color-mix-1);
+      --color-btn-checkout: var(--color-mix-1);
+      --color-bg-dropdown: var(--color-mix-2);
+      --color-icon-dropdown: var(--color-gray-7);
+      --color-text-area: var(--color-gray-11);
+      --color-button-copy-1: var(--color-blue-4);
+      --color-button-copy-2: var(--color-blue-4);
+      --color-button-filter: var(--color-gray-9);
+
+    };
+
+    //----------------------------------------old variable----------------//
+
+    --color-background-primary:  linear-gradient(135deg, #FE8C00 0%, #F83600 100%);
+    --color-background-secondary:  radial-gradient(#8F2200 40% #000000 0%;) linear-gradient( #1A1515 100% #2D2929 100%);
+    --color-background-third: #2C3E7C radial-gradient( #2CD9FF  50% #0036FF 0%);
+    --color-background-forth: #681155 radial-gradient( #FF2CF7  50% ##FF001F 0%);
+    --color-background-fifth: linear-gradient(180deg, rgba(255, 177, 143, 0) 53.79%, #dc1f1fb3 100%);
+    --color-background-sixth: linear-gradient(180deg, #1E1D1D 12.63%, #FFFFFF 87.65%);
+    --color-background-seventh: #EBF0F3;
+    --color-background-eighth: linear-gradient(180deg, rgba(22, 22, 22, 0) 30.52%, rgba(16, 16, 16, 0.8) 100%);
+
+    --color-primary-light: #FFFEFE;
+    --color-primary-dark: #050505;
+    --color-primary-grey: #333333;
+    --color-primary-grey-1: #AAAAAA;
+    --color-secondary: #FFE0B2;
+
+    --color-success: #00CB9A;
+    --color-success-2: #40C72A;
+    --color-danger: #E6001C;
+    --color-highlight: #FE8C00;
+
+    --color-switcher-light: #C0542B;
+
+    --gray: #E0E5E8;
+    --gray-100: #aaaaaa;
+    --gray-200: #c7c6c6;
+    --gray-300: #F0F1F4;
+    --gray-400: #999999;
+    --color-border-primary: #555555;
+    --color-border-secondary: #E2E5E8;
+    --color-border-third: #bb3500;
+
+    --color-background-input: #F0F1F4;
+    --color-checkbox-container: #E7E7E7;
+    --color-facebook: #001AFF;
+    --color-twitter: #00A3FF;
+    --color-discord: #4A46FF;
+}

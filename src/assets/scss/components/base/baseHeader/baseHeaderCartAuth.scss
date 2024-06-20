@@ -1,0 +1,126 @@
+.header-cart-btn-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.header-cart-icon-wrapper {
+    flex: 0 0 44px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.header-cart-dropdown-wrapper {
+  box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.25) !important;
+  padding: 30px !important;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--color-background) !important;
+}
+
+.header-cart-id-wrapper {
+  font-size: var(--font-sm-3);
+  font-weight: 500;
+  line-height: 18.5px;
+  display: flex;
+  align-items: center;
+  gap: 27px;
+}
+
+.header-cart-id {
+  flex: 0 1 143px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: var(--color-text);
+}
+
+.header-cart-icon {
+  width: 21px;
+  height: 21px;
+}
+
+.header-cart-currency-wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.header-cart-currency-icon {
+  width: 44px;
+  height: 44px;
+}
+
+.header-cart-currency-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  & *{
+    @include pageSmallStyle;
+    color: var(--color-text-4);
+  }
+}
+
+.header-cart-divider {
+  @include pageGreyDivider
+}
+
+.header-cart-link-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-start;
+  gap: 24px;
+}
+
+.header-cart-link {
+  display: flex;
+  gap: 10px;
+}
+
+.header-cart-link-name {
+  font-size: var(--font-sm-2);
+  font-weight: 600;
+  line-height:20px;
+  color: var(--color-text);
+}
+
+.copy-wrapper {
+  position: relative;
+}
+
+.copy-btn {
+  &:hover + .copy-text {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.copy-text {
+  background-color: var(--color-text);
+  border-radius: 6px;
+  padding: 5px;
+  color: var(--color-background);
+  transition: opacity 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+
+}

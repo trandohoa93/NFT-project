@@ -1,0 +1,32 @@
+.common-dropdown-group {
+    width: 100%;
+
+    .dropdown-title {
+        font-size: var(--font-sm-2);
+        font-weight: 700;
+        line-height: 18px;
+        text-align: left;
+        color: var(--color-text);
+        margin-bottom: 10px;
+    }
+
+    .dropdown {
+        background: var(--color-gray-2);
+        
+    }
+
+    .dropdown-error {
+        margin-top: 8px;
+        margin-left: 10px;
+        color: var(--color-danger);
+    }
+}
+
+:global(.v-field--variant-outlined .v-label.v-field-label--floating) {
+    background-color: var(--color-gray-2);
+    padding: 0.5px;
+}
+
+:global(.v-field--variant-outlined .v-field__outline__notch::before) {
+    border-width: none;
+}

@@ -1,0 +1,20 @@
+.apply-coupon {
+    
+}
+:deep(.apply-coupon) {
+    .v-field--appended {
+        padding-inline-end: 0px;
+    }
+    .v-field__input, .v-field__field {
+        height: 50px;
+    }
+    .v-field--variant-outlined .v-field__outline {
+        --v-field-border-width: 0;
+    }
+}
+.apply-coupon-btn {
+    height: 100%;
+    font-size: var(--font-sm-2);
+    font-weight: 700;
+    line-height: 20px;
+}
